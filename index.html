@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/style.min.css">
+   <meta name="description" content="front-end-template description">
+   <title>front-end-template</title>
+</head>
+
+	<body>
+		<div id="root" class="wrapper">
+			<header class="header">
+	<div class="header__container container">
+		<div class="header__inner">
+			<!-- Logo -->
+			<div class="header__logo logo">
+				<a class="logo__link" href="/">
+					<img
+						class="logo__image"
+						src="./assets/images/logo/logo.svg"
+						alt="logo picture" />
+				</a>
+			</div>
+
+			<!-- Navigation -->
+			<nav class="header__navigation navigation" id="header-navigation">
+				<!-- <ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link" href="blog.html">
+							<span class="navigation__label">Blog</span>
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="testimonials.html">
+							<span class="navigation__label">Testimonials</span>
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="examples.html">
+							<span class="navigation__label">Examples</span>
+						</a>
+					</li>
+				</ul> -->
+			</nav>
+
+			<!-- Controls -->
+			<div class="header__control header-control">
+				<button
+					data-popup-open="contact"
+					class="header-control__button header-control__button--contact button button--light button button--small">
+					<span>Contact</span>
+				</button>
+			</div>
+
+			<!-- Menu icon -->
+			<div
+				class="header__menu-icon menu-icon"
+				id="menu-icon"
+				style="display: none">
+				<span></span>
+			</div>
+		</div>
+	</div>
+</header>
+
+			<main class="page">
+				<section class="welcome">
+	<div class="welcome__container container">
+		<div class="welcome__inner">
+			<div class="welcome__body">
+				<div class="welcome__info">
+					<div class="welcome__title title">
+						<h1 class="title__main title__main--underline">
+							We make high quality chrome extensions
+						</h1>
+						<p class="title__sub">
+							We specialize in creating chrome extensions that save time and solve real problems.
+						</p>
+					</div>
+					<div class="welcome__control">
+						<button
+							class="welcome__button welcome__button--contact button button--action"
+							data-popup-open="contact">
+							<span>CONTACT</span>
+						</button>
+					</div>
+				</div>
+				<div class="welcome__video welcome-video">
+					<!-- <img
+						class="welcome-video__play-icon"
+						src="./assets/images/video/video-play.svg"
+						alt="video play icon" /> -->
+
+					<div class="welcome-video__preview picture">
+						<img
+							src="./assets/images/welcome/video-preview.webp"
+							alt="video preview picture" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pages-under"></div>
+	<div class="welcome__overlay">
+		<img src="assets/images/welcome/cover.png" alt="cover image" />
+		<svg
+			class="thumbnail thumbnail--1"
+			width="143"
+			height="166"
+			viewBox="0 0 143 166"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M42.2363 152.399L31.9429 126.64L2.98298 68.7562C-2.44964 57.8977 3.53172 43.9668 16.1173 37.5258C37.4192 26.6239 65.6883 11.4982 79.6463 1.60623L81.1252 0.558066L82.0593 1.81291C82.3439 2.19529 82.981 2.92553 84.047 4.14702C85.0897 5.34186 86.4928 6.95128 88.2459 9.03095C91.7529 13.1912 96.6548 19.2263 102.897 27.6122C110.74 38.1491 111.419 45.3101 108.504 50.1424C105.64 54.89 99.8477 56.4576 97.0986 56.8024C93.4006 57.2662 90.4355 56.2563 87.5041 54.929C86.6595 54.5466 85.8213 54.1407 84.962 53.7246L84.9617 53.7245C82.7687 52.6626 80.4378 51.5338 77.5091 50.5574C71.8877 48.6834 67.7159 49.206 64.6683 50.3436C61.8967 51.3781 59.9265 52.9534 58.4084 54.1672C58.2117 54.3245 58.0226 54.4757 57.8403 54.6189L57.8282 54.6283L57.816 54.6377C53.1708 58.1739 46.4695 66.4892 46.3234 77.7115C46.6734 82.5023 48.1598 88.1455 50.4987 93.7328C50.8555 94.4031 51.4443 95.8761 51.4443 95.8761C53.2234 99.7086 55.4432 103.45 58.0679 106.792C64.9954 115.613 74.4044 121.265 85.5708 119.194C85.7715 119.14 85.9804 119.086 86.1967 119.03L86.1971 119.03C88.0787 118.543 90.5207 117.911 93.0103 116.313C95.748 114.556 98.6677 111.531 100.538 105.908C101.513 102.979 102.007 100.437 102.473 98.045C102.655 97.1077 102.833 96.1935 103.033 95.2881C103.729 92.1463 104.698 89.1678 107.287 86.4864C109.211 84.4931 113.939 80.7973 119.455 81.3522C125.07 81.917 130.395 86.7535 134.124 99.3486C137.093 109.372 138.983 116.914 140.21 122.215C140.823 124.865 141.27 126.953 141.601 128.504C141.939 130.09 142.142 131.037 142.277 131.494L142.721 132.994L140.995 133.549C125.117 138.658 97.0934 151.673 75.7691 162.067C62.4179 168.574 46.9751 164.258 42.2363 152.399Z"
+				fill="#FFB08E" />
+		</svg>
+
+		<svg
+			class="thumbnail thumbnail--2"
+			width="127"
+			height="127"
+			viewBox="0 0 127 127"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<mask
+				id="mask0_442_46997"
+				style="mask-type: alpha"
+				maskUnits="userSpaceOnUse"
+				x="0"
+				y="0"
+				width="127"
+				height="127">
+				<rect
+					x="52.2012"
+					width="91"
+					height="91"
+					transform="rotate(35.0045 52.2012 0)"
+					fill="#D9D9D9" />
+			</mask>
+			<g mask="url(#mask0_442_46997)">
+				<path
+					d="M22.1703 90.0653L7.64483 79.8927C5.54246 78.4204 4.26586 76.4116 3.81504 73.8663C3.36855 71.3203 3.88147 68.9961 5.35382 66.8937L15.5264 52.3682C18.5844 54.5098 21.9401 55.4128 25.5935 55.0772C29.2487 54.739 32.1248 53.0727 34.2218 50.0785C36.3187 47.0842 36.9013 43.8117 35.9695 40.2612C35.0359 36.7131 33.0401 33.8683 29.9821 31.7267L40.1547 17.2012C41.6271 15.0989 43.635 13.8235 46.1784 13.3753C48.7262 12.9262 51.0513 13.4379 53.1537 14.9102L68.4437 25.6182C70.3176 22.9424 72.8252 21.3277 75.9666 20.7741C79.1081 20.2204 82.0167 20.8805 84.6924 22.7544C87.3682 24.6283 88.9829 27.136 89.5365 30.2774C90.0902 33.4188 89.4301 36.3274 87.5562 39.0032L102.846 49.7111C104.949 51.1835 106.224 53.1935 106.673 55.7413C107.122 58.2848 106.61 60.6077 105.137 62.7101L94.4292 78.0001C97.105 79.874 98.7197 82.3816 99.2733 85.5231C99.827 88.6645 99.1669 91.5731 97.293 94.2488C95.4191 96.9246 92.9114 98.5393 89.77 99.0929C86.6286 99.6466 83.72 98.9865 81.0443 97.1126L70.3363 112.403C68.8639 114.505 66.8552 115.782 64.3099 116.232C61.7639 116.679 59.4397 116.166 57.3373 114.694L42.8118 104.521C45.0426 101.336 45.9361 97.9257 45.4921 94.2914C45.0456 90.6553 43.3889 87.8334 40.522 85.8257C37.6552 83.8179 34.4382 83.2267 30.8711 84.0519C27.3014 84.8754 24.4012 86.8799 22.1703 90.0653Z"
+					fill="#56AEFF" />
+			</g>
+		</svg>
+		<svg
+			class="thumbnail thumbnail--3"
+			width="320"
+			height="320"
+			viewBox="0 0 320 320"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M0 160C0 120.543 14.2825 84.422 37.9594 56.5246C37.9594 56.5246 84.9985 142.665 91.6304 174.28C98.2623 205.894 126.304 229.637 159.892 229.637C165.361 229.637 170.683 229.007 175.79 227.816L126.685 316.527C54.3092 301.198 0 236.941 0 160ZM134.668 94.8444C117.532 101.494 103.677 114.718 96.1995 131.421L54.427 39.7711C82.5998 15.0129 119.547 0 160 0C224.698 0 280.427 38.4007 305.639 93.6532H181.796C174.907 91.3762 167.544 90.1439 159.892 90.1439C152.24 90.1439 144.875 91.3762 137.986 93.6532H134.668V94.8444ZM160 320C248.366 320 320 248.366 320 160C320 144.589 317.821 129.688 313.755 115.586H213.76C223.68 127.633 229.637 143.065 229.637 159.889C229.637 176.4 223.898 191.572 214.308 203.519L150.001 319.693C153.308 319.897 156.642 320 160 320ZM159.952 102.646C128.301 102.646 102.646 128.3 102.646 159.946C102.646 191.592 128.301 217.251 159.952 217.25C191.597 217.25 217.256 191.593 217.256 159.946C217.256 128.3 191.597 102.646 159.952 102.646Z"
+				fill="#3AC370" />
+		</svg>
+	</div>
+</section>
+
+				<section class="testimonials">
+	<div class="testimonials__container container">
+		<div class="testimonials__inner">
+			<div class="testimonials__title title">
+				<h2 class="title__main title__main--underline">
+					Client testimonials.
+				</h2>
+				<p class="title__sub">
+					We have worked with more than 200 clients worldwide, providing them with excellent service and robust high-quality chrome extensions that solve problems and save time.
+				</p>
+			</div>
+			<div
+				class="testimonials__items testimonials-items"
+				id="testimonials-items">
+				<div
+					class="testimonials-items__preview"
+					data-popup-open="video"
+					data-video-source="vimeo"
+					data-video-id="606357280"
+					data-testimonial-item>
+					<img
+						class="testimonials-items__video-play"
+						src="./assets/images/video/video-play.svg"
+						alt="play icon" />
+					<div class="picture">
+						<picture>
+							<img
+								loading="lazy"
+								src="./assets/images/testimonials/testimonial-1.webp"
+								alt="video preview picture" />
+						</picture>
+					</div>
+				</div>
+				<div
+					class="testimonials-items__preview"
+					data-popup-open="video"
+					data-video-source="vimeo"
+					data-video-id="608034413"
+					data-testimonial-item>
+					<img
+						class="testimonials-items__video-play"
+						src="./assets/images/video/video-play.svg"
+						alt="play icon" />
+					<div class="picture">
+						<picture>
+							<img
+								loading="lazy"
+								src="./assets/images/testimonials/testimonial-2.webp"
+								alt="video preview picture" />
+						</picture>
+					</div>
+				</div>
+				<div
+					class="testimonials-items__preview"
+					data-popup-open="video"
+					data-video-source="vimeo"
+					data-video-id="508847802"
+					data-testimonial-item>
+					<img
+						class="testimonials-items__video-play"
+						src="./assets/images/video/video-play.svg"
+						alt="play icon" />
+					<div class="picture">
+						<picture>
+							<img
+								loading="lazy"
+								src="./assets/images/testimonials/testimonial-3.webp"
+								alt="video preview picture" />
+						</picture>
+					</div>
+				</div>
+				<div
+					class="testimonials-items__preview"
+					data-popup-open="video"
+					data-video-source="vimeo"
+					data-video-id="774169411"
+					data-testimonial-item>
+					<img
+						class="testimonials-items__video-play"
+						src="./assets/images/video/video-play.svg"
+						alt="play icon" />
+					<div class="picture">
+						<picture>
+							<img
+								loading="lazy"
+								src="./assets/images/testimonials/testimonial-4.webp"
+								alt="video preview picture" />
+						</picture>
+					</div>
+				</div>
+				<div
+					class="testimonials-items__preview"
+					data-popup-open="video"
+					data-video-source="vimeo"
+					data-video-id="776112635"
+					data-testimonial-item>
+					<img
+						class="testimonials-items__video-play"
+						src="./assets/images/video/video-play.svg"
+						alt="play icon" />
+					<div class="picture">
+						<picture>
+							<img
+								loading="lazy"
+								src="./assets/images/testimonials/testimonial-5.webp"
+								alt="video preview picture" />
+						</picture>
+					</div>
+				</div>
+				<div
+					class="testimonials-items__preview"
+					data-popup-open="video"
+					data-video-source="vimeo"
+					data-video-id="779862233"
+					data-testimonial-item>
+					<img
+						class="testimonials-items__video-play"
+						src="./assets/images/video/video-play.svg"
+						alt="play icon" />
+					<div class="picture">
+						<picture>
+							<img
+								loading="lazy"
+								src="./assets/images/testimonials/testimonial-6.webp"
+								alt="video preview picture" />
+						</picture>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<section class="examples">
+	<div class="examples__container container">
+		<div class="examples__inner">
+			<div class="examples__title title">
+				<h2 class="title__main title__main--underline">
+					Examples of our work
+				</h2>
+				<p class="title__sub">We have worked with more than 200 clients worldwide, providing them with excellent service and robust high-quality chrome extensions that solve problems and save time.</p>
+			</div>
+			<div class="examples__items" id="examples-items">
+				<div
+					data-popup-open="video"
+					data-video-id="LJBZGsO3OU0"
+					data-video-source="youtube"
+					class="examples__item examples-item"
+					style="background: linear-gradient(135deg, #6d6daf, #638ebc)"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/mindfulmeets.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="dlIBXc_FidI"
+					data-video-source="youtube"
+					class="examples__item examples-item"
+					style="background: linear-gradient(135deg, #c9eeff, #b8eaed)"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/opaque.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474764325"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #fda65e"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/amachete.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474327408"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #179888"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/annotate-meet.svg"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474327408"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #f9b54c"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/eversign.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474335407"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #21ca65"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/growflare.svg"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474741569"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #0c6a5c"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/peppermint.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474321037"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #bd002b"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/pomodoro.svg"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474331094"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #cc0035"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/robots-exclusion-checker.svg"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="473131261"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: black"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/shuffleflix.svg"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474336527"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #3e3e43"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/sift.svg"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474325338"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #6b3baf"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/snowplow.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474761558"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #feee5d"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/sponge.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474321037"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: linear-gradient(135deg, #127fb0, #074d6f)"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/techloq.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474319236"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #f54d34"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/trump-tweets.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474320388"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #9d0033"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/wein-plus.png"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+				<div
+					data-popup-open="video"
+					data-video-id="474333113"
+					data-video-source="vimeo"
+					class="examples__item examples-item"
+					style="background: #fc2275"
+					data-example-item>
+					<img
+						loading="lazy"
+						class="examples-item__image"
+						src="assets/images/work_examples/wevpn.svg"
+						alt="example work image" />
+					<div class="examples-item__overlay">
+						<img
+							class="examples-item__play-icon"
+							src="assets/images/video/video-play.svg"
+							alt="video play icon" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<section class="about">
+	<div class="about__overlay">
+		<!-- <img src="assets/images/welcome/cover.png" alt="cover image" /> -->
+	</div>
+	<div class="about__container container">
+		<div class="about__inner">
+			<div class="about__title title title--center">
+				<h2 class="title__main">About us</h2>
+				<p class="title__sub"></p>
+			</div>
+			<div class="about__items">
+				<div class="about__item about-item">
+					<div class="about-item__value">5+</div>
+					<div class="about-item__label">Years of experience</div>
+				</div>
+				<div class="about__item about-item">
+					<div class="about-item__value">200+</div>
+					<div class="about-item__label">Years of experience</div>
+				</div>
+				<div class="about__item about-item">
+					<div class="about-item__value">0+</div>
+					<div class="about-item__label">Years of experience</div>
+				</div>
+				<div class="about__item about-item">
+					<div class="about-item__value">0+</div>
+					<div class="about-item__label">Years of experience</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<section class="features">
+	<div class="features__container container">
+		<div class="features__inner">
+			<div class="features__title title">
+				<h2 class="title__main title__main--underline">
+					Get more customers
+				</h2>
+				<p class="title__sub">Some text to fill the word space in the landing and some text to fill the word space in the landing.</p>
+			</div>
+			<div class="features__items">
+				<div class="features__item features-item">
+					<div class="features-item__image">
+						<img
+							loading="lazy"
+							src="assets/images/features/green.webp"
+							alt="feature image" />
+					</div>
+					<h4 class="features-item__title">Some main info</h4>
+					<p class="features-item__text">some other info in smaller weight and maybe more than in two strokes</p>
+					<!-- <a
+						class="features-item__button button button--small button--dark"
+						href="#">
+						Get more
+					</a> -->
+				</div>
+				<div class="features__item features-item">
+					<div class="features-item__image">
+						<img
+							loading="lazy"
+							src="assets/images/features/blue.webp"
+							alt="feature image" />
+					</div>
+					<h4 class="features-item__title">Some main info</h4>
+					<p class="features-item__text">some other info in smaller weight and maybe more than in two strokes</p>
+					<!-- <a
+						class="features-item__button button button--small button--dark"
+						href="#">
+						Get more
+					</a> -->
+				</div>
+				<div class="features__item features-item">
+					<div class="features-item__image">
+						<img
+							loading="lazy"
+							src="assets/images/features/pink.webp"
+							alt="feature image" />
+					</div>
+					<h4 class="features-item__title">Some main info</h4>
+					<p class="features-item__text">some other info in smaller weight and maybe more than in two strokes</p>
+					<!-- <a
+						class="features-item__button button button--small button--dark"
+						href="#">
+						Get more
+					</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<section class="contact">
+	<div class="contant__container container">
+		<div class="contact__inner">
+			<div class="contact__title title">
+				<h2 class="title__main title__main--underline">
+					Contact us
+				</h2>
+				<p class="title__sub">We offer a free consultation call and a free prototype of your chrome extension idea.</p>
+			</div>
+			<form class="contact__form form" method="post">
+				<div class="form__fields-wrapper">
+					<label class="form__field form-field">
+						<span class="form-field__label">Name</span>
+						<input type="text" placeholder="Steve" required />
+						<span class="form-field__info"></span>
+					</label>
+					<label class="form__field form-field">
+						<span class="form-field__label">Email Address</span>
+						<input type="text" placeholder="example@domain.com" required />
+						<span class="form-field__info"></span>
+					</label>
+					<label class="form__field form-field">
+						<span class="form-field__label">Please type your message here</span>
+						<textarea placeholder="Please type your message here"></textarea>
+						<span class="form-field__info"></span>
+					</label>
+				</div>
+				<button class="form__button button button--dark">
+					<span>Submit</span>
+					<div class="button__loader">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</button>
+				<div class="form__message form__message--success">
+					<span>The form was sent successfully</span>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+				<!-- <section class="blog">
+	<div class="blog__container container">
+		<div class="blog__inner">
+			<div class="blog__title title">
+				<h2 class="title__main title__main--underline">
+					Our blog
+				</h2>
+				<p class="title__sub"></p>
+			</div>
+			<div class="blog__items">
+				<div class="blog__item blog-item">
+					<div class="blog-item__header">
+						<div class="blog-item__avatar">
+							<img src="assets/images/blog/avatar.png" alt="avatar image" />
+						</div>
+						<div class="blog-item__info">
+							<div class="blog-item__name">Vlas</div>
+							<div class="blog-item__position">Front-end developer</div>
+							<div class="blog-item__date">10/01/2023</div>
+						</div>
+					</div>
+					<div class="blog-item__body">
+						<h4 class="blog-item__title">header of article</h4>
+						<p class="blog-item__text">
+							some text about the article to let user understnad more than only
+							from headline...
+						</p>
+						<a
+							class="blog-item__link button button--small button--line"
+							href="#">
+							<span>Read More</span>
+						</a>
+					</div>
+				</div>
+				<div class="blog__item blog-item">
+					<div class="blog-item__header">
+						<div class="blog-item__avatar">
+							<img src="assets/images/blog/avatar.png" alt="avatar image" />
+						</div>
+						<div class="blog-item__info">
+							<div class="blog-item__name">Nik</div>
+							<div class="blog-item__position">Front-end developer</div>
+							<div class="blog-item__date">10/01/2023</div>
+						</div>
+					</div>
+					<div class="blog-item__body">
+						<h4 class="blog-item__title">header of article</h4>
+						<p class="blog-item__text">
+							some text about the article to let user understnad more than only
+							from headline...
+						</p>
+						<a
+							class="blog-item__link button button--small button--line"
+							href="#">
+							<span>Read More</span>
+						</a>
+					</div>
+				</div>
+				<div class="blog__item blog-item">
+					<div class="blog-item__header">
+						<div class="blog-item__avatar">
+							<img src="assets/images/blog/avatar.png" alt="avatar image" />
+						</div>
+						<div class="blog-item__info">
+							<div class="blog-item__name">Roma</div>
+							<div class="blog-item__position">Front-end developer</div>
+							<div class="blog-item__date">10/01/2023</div>
+						</div>
+					</div>
+					<div class="blog-item__body">
+						<h4 class="blog-item__title">header of article</h4>
+						<p class="blog-item__text">
+							some text about the article to let user understnad more than only
+							from headline some text about the article to let user understnad
+							more than only from headline...
+						</p>
+						<a
+							class="blog-item__link button button--small button--line"
+							href="#">
+							<span>Read More</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+			</main>
+			<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__inner">
+			<div class="footer__items">
+				<!-- <div class="footer__item footer-item footer-item--links">
+					<h4 class="footer-item__title">Main links</h4>
+					<ul class="footer-item__list footer-item__list--links">
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="testimonials.html">Testimonials</a>
+						</li>
+						<li>
+							<a href="examples.html">Examples</a>
+						</li>
+					</ul>
+					<button
+						data-popup-open="contact"
+						class="footer-item__button footer-item__button--contact button button--light button button--small">
+						<span>Contact</span>
+					</button>
+				</div> -->
+				<div class="footer__item footer-item footer-item--social">
+					<h4 class="footer-item__title">Find us in social media</h4>
+					<ul class="footer-item__list">
+						<li>
+							<a href="https://www.linkedin.com/in/bashvlas">
+								<img src="assets/images/social/linkedin.svg" alt="social img" />
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/bashvlas">
+								<img src="assets/images/social/facebook.svg" alt="social img" />
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/bashvlas">
+								<img src="assets/images/social/instagram.svg" alt="social img" />
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/bashvlas/">
+								<img src="assets/images/social/twitter.svg" alt="social img" />
+							</a>
+						</li>
+						<li>
+							<a href="https://www.upwork.com/freelancers/bashvlas">
+								<img src="assets/images/social/upwork.svg" alt="social img" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <div class="footer__item footer-item footer-item--other">
+					<h4 class="footer-item__title">Other links</h4>
+					<ul class="footer-item__list">
+						<li>
+							<a href="#">Chrome Extension Development Team</a>
+						</li>
+						<li>
+							<a href="#">Hire Chrome Extension Developer</a>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+			<div class="footer__copyright">
+				© 2023 Vlas Bashynskyi. All rights reserved.
+			</div>
+		</div>
+	</div>
+</footer>
+
+			<div class="popup" id="popup">
+	<div class="popup__inner">
+		<div class="popup__content">
+			<button class="popup__close" data-popup-close></button>
+			<!-- Contact form -->
+			<div class="popup__contact-form contact-form" data-popup-name="contact">
+				<div class="contact-form__title title">
+					<h3 class="title__main">Contact us</h3>
+					<p class="title__sub">
+						We offer a free consultation call and a free prototype of your
+						chrome extension idea.
+					</p>
+				</div>
+				<form class="contact-form__form form" method="post">
+					<div class="form__fields-wrapper">
+						<label class="form__field form-field">
+							<span class="form-field__label">Name</span>
+							<input type="text" placeholder="Steve" required />
+							<span class="form-field__info"></span>
+						</label>
+						<label class="form__field form-field">
+							<span class="form-field__label">Email</span>
+							<input type="email" placeholder="example@domain.com" required />
+							<span class="form-field__info"></span>
+						</label>
+						<label class="form__field form-field">
+							<span class="form-field__label">Message</span>
+							<textarea placeholder="Message"></textarea>
+							<span class="form-field__info"></span>
+						</label>
+					</div>
+					<div class="form__buttons-wrapper">
+						<button
+							class="form__button button button--dark button--small"
+							type="submit">
+							<span>Submit</span>
+							<div class="button__loader">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</button>
+						<button
+							class="form__button button button--dark button--small contact-form__button contact-form__button--cancel"
+							type="button"
+							data-popup-close="contact">
+							Cancel
+						</button>
+					</div>
+					<div class="form__message form__message--success">
+						<span>The form was sent successfully</span>
+					</div>
+				</form>
+			</div>
+
+			<!-- Video overlay -->
+			<div
+				class="popup__video popup-video"
+				id="popup-video"
+				data-popup-name="video"></div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<script src="assets/js/script.min.js"></script>
+
+	</body>
+</html>
